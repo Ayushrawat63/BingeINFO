@@ -2,11 +2,13 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
 
+
 const Body = () => {
+
   return (
     <div className="relative">
       <Header btn={true} />
-      <div className="  ">
+      <div >
         <div className="w-full h-[100vh] bg-black  opacity-50 absolute z-20"></div>
         <div className="absolute z-30 top-[30%]  w-full flex flex-col items-center justify-center   py-10">
           <h1 className="font-bold text-white text-5xl mb-3">

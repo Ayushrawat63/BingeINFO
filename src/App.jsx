@@ -1,12 +1,18 @@
-import HomePage from "./comptonents/HomePage"
+
+import { Provider } from "react-redux";
+import HomePage from "./comptonents/HomePage";
+import appStore from "./Redux/appStore";
 
 
 function App() {
   return (
     <>
-      <HomePage/>
+    <Provider store={appStore}>
+        <HomePage />
+    </Provider>
+
     </>
-  )
+  );
 }
 
-export default App
+export default App;
