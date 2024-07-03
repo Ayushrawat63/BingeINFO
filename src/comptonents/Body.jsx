@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
+import { Background_IMG } from "../utils/constants";
 
 
 const Body = () => {
@@ -37,7 +38,7 @@ const Body = () => {
         </div>
         <img
           className="h-[100vh] w-full object-cover "
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/a56dc29b-a0ec-4f6f-85fb-50df0680f80f/2f8ae902-8efe-49bb-9a91-51b6fcc8bf46/IN-en-20240617-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+          src={Background_IMG}
           alt=" background_imageS"
         />
       </div>

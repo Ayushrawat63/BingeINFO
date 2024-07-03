@@ -1,19 +1,20 @@
+// import { useSelector } from "react-redux";
 
-
-import { useSelector } from "react-redux";
+import useNowPlayMovie from "../Hooks/useNowPlayMovies";
 import Header from "./Header";
+import ListMovies from "./ListMovies";
+import MovieTrailer from "./MovieTrailer";
 
 
 const Browse = () => {
-  const userInfo=useSelector((store)=>store.user)
+  // const userInfo=useSelector((store)=>store.user)
+  useNowPlayMovie();
+ 
   return (
     <>
-    <Header btn={false}/>  
-      {userInfo && < div className="mt-16 text-black border-2 border-red-600 z-50">
-         <h1>{userInfo.email}</h1>
-         <h1>{userInfo.displayName}</h1>
-
-      </div>}
+      <Header btn={false} />
+      <MovieTrailer/>
+      <ListMovies/>
     </>
   );
 };

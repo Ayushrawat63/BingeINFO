@@ -89,7 +89,7 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          console.log(user);
+          // console.log(user);
           dispatch(addUser({uid:user.uid,email:user.email,displayName:auth.currentUser.displayName}))
           navigate('/browser')
 
